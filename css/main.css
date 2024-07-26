@@ -125,6 +125,15 @@ main {
     overflow-y: auto;
 }
 
+@media only screen and (min-height: 1025px) and (min-width: 941px) {
+    .col-2.sticky {
+        position: sticky;
+        top: var(--header-height);
+        height: calc(100vh - var(--header-height));
+        overflow: hidden;
+    }
+}
+
 .col-inner {
     max-width: 43rem;
     padding: 2rem 2rem 4rem; /*additional 2rem bottom padding to match header bottom padding*/
