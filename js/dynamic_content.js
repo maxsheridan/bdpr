@@ -13,7 +13,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     return response.text();
                 })
                 .then(data => {
-                    document.querySelector(".col-2").innerHTML = data;
+                    const col2 = document.querySelector(".col-2");
+                    col2.innerHTML = data;
+                    col2.classList.add("sticky");  // Apply sticky class
                     col2ContentLoaded = true; // Set flag to true after loading content
                     // Reattach event listeners to links in col-2 content
                     reattachAjaxLinkListeners();
