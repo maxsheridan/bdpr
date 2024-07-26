@@ -116,15 +116,6 @@ main {
     overflow-y: auto;
 }
 
-@media only screen and (min-height: 641px) and (min-width: 941px) {
-    .col-1.sticky {
-        position: sticky;
-        top: var(--header-height);
-        height: calc(100vh - var(--header-height));
-        overflow: hidden;
-    }
-}
-
 .col-2 {
     display: flex;
     flex: 1.25;
@@ -132,15 +123,6 @@ main {
     position: relative;
     height: 100%;
     overflow-y: auto;
-}
-
-@media only screen and (min-height: 1025px) and (min-width: 941px) {
-    .col-2.sticky {
-        position: sticky;
-        top: var(--header-height);
-        height: calc(100vh - var(--header-height));
-        overflow: hidden;
-    }
 }
 
 .col-inner {
@@ -311,7 +293,7 @@ p.intro {
 
     .col-inner {
         max-width: 41rem; /*accounts for padding*/
-        padding: 1rem 1rem;
+        padding: 1rem 1rem 3rem;
     }
     
 }
