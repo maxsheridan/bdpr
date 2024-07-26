@@ -1,0 +1,315 @@
+@font-face {
+    font-family: 'Triptych Roman';
+    src: url('/assets/type/Triptych_Roman.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Triptych Italick';
+    src: url('/assets/type/Triptych_Italick.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Triptych Grotesque';
+    src: url('/assets/type/Triptych_Grotesque.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+    scrollbar-width: none;
+}
+
+html {
+    font-size: 16px;
+    cursor: url('/assets/graphics/point.svg'), auto;
+}
+
+html a:hover {
+    cursor: url('/assets/graphics/hover.svg'), auto;
+}
+
+body { 
+    max-width: 1200px;
+    min-height: 100vh;
+    min-height: 100dvh;
+    margin: 0 auto;
+    background: #ECDFDF;
+    -ms-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: sticky;
+    top: 0;
+    padding: 2rem 2rem;
+    background: #ECDFDF;
+}
+
+.site-title h1 {
+    font-size: clamp(2rem,5.6vw,4.25rem);
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    padding-top: 2rem;
+}
+
+nav .links {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+nav p {
+    margin: 0;
+}
+
+nav .links a {
+    padding-bottom: .15rem;
+}
+
+nav .links a.active {
+    border-bottom: 3px solid white;
+}
+
+nav .links a:nth-child(2) {
+    margin: 0 1rem;
+}
+
+main {
+    display: flex;
+}
+
+.page {
+    display: flex;
+    width: 100%;
+}
+
+.col-1 {
+    display: flex;
+    flex: 2.75;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    overflow-y: auto;
+}
+
+@media only screen and (min-height: 640px) and (min-width: 941px) {
+    .col-1.sticky {
+        position: sticky;
+        top: var(--header-height);
+        height: calc(100vh - var(--header-height));
+        overflow: hidden;
+    }
+} 
+
+.col-inner {
+    max-width: 43rem;
+}
+
+.col-2 {
+    display: flex;
+    flex: 1.25;
+    justify-content: flex-end;
+    position: relative;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.col-inner {
+    padding: 2rem 2rem 4rem; /*additional 2rem bottom padding to match header bottom padding*/
+}
+
+p {
+    font-family: 'Triptych Roman', Helvetica, Arial, sans-serif;
+    font-size: clamp(.9rem,3vw,1.05rem);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    color: #111;
+    margin: 0 0 1rem;
+}
+
+p.small {
+    font-size: clamp(.8rem,3vw,.9rem);
+}
+
+h2 {
+    font-family: 'Triptych Grotesque', Helvetica, Arial, sans-serif;
+    font-size: clamp(1.04rem,2.7vw,1.17rem);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.45;
+    text-transform: uppercase;
+    color: #111;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-family: 'Triptych Roman', Helvetica, Arial, sans-serif;
+    font-size: clamp(1.04rem,2.7vw,1.17rem);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.45;
+    text-transform: uppercase;
+    color: #111;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-family: 'Triptych Italick', Helvetica, Arial, sans-serif;
+    font-size: clamp(2rem,5vw,4rem);
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.2;
+    color: #111;
+    margin: 0 0 1.5rem 0;
+}
+
+li {
+        font-family: 'Triptych Roman', Helvetica, Arial, sans-serif;
+        font-size: clamp(1rem,3vw,1rem);
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.5;
+        list-style-type: none;
+        color: #111;
+}
+
+.col-1 li {
+    margin: 0 0 1rem;
+}
+
+a {
+    color: #111;
+    text-decoration: none;
+}
+
+blockquote {
+    margin: 3rem auto;
+    padding: 0 .5rem 0 .5rem;
+}
+
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    background: #FFF;
+    margin: 0 0 1rem;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/*——Classes*/
+
+.dropcap {
+    float: left;
+    padding: .75rem .5rem .75rem 0rem;
+    font-family: "Triptych Roman", Helvetica, Arial, sans-serif;
+    font-size: 7rem;
+    line-height: 4.5rem;
+    color: #111;
+}
+
+p.intro {
+    font-family: 'Triptych Italick', Helvetica, Arial, sans-serif;
+}
+
+.archive {
+    margin: 1rem 0 0;
+}
+
+.archive:nth-child(n+2) {
+    margin: 2rem 0 0;
+}
+
+.archive p:not(ul) {
+    font-family: 'Triptych Grotesque';
+    text-transform: uppercase;
+}
+
+.copyright {
+    margin: 2rem 0 0;
+}
+
+/*Mobile*/
+@media only screen and (min-width: 641px) and (max-width: 939px) {
+    .col-inner.row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 100%
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    body {
+        overflow: auto;
+    }
+
+    header {
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    main {
+        height: 100%;
+    }
+
+    .page {
+        display: block;
+        height: 100%;
+    }
+
+    .col-1 {
+        justify-content: center;
+    }
+
+    .col-2 {
+        justify-content: flex-start;
+        max-width: 41rem; /*accounts for padding*/
+        margin: 0 auto;
+    }
+
+    .col-inner {
+        max-width: 41rem; /*accounts for padding*/
+        padding: 1rem 1rem;
+    }
+    
+}
+
+@media only screen and (max-width: 380px) {
+    img {
+        max-width: unset;
+    }
+}
