@@ -116,14 +116,23 @@ main {
     overflow-y: auto;
 }
 
-@media only screen and (min-height: 640px) and (min-width: 941px) {
+@media only screen and (min-height: 641px) and (min-width: 941px) {
     .col-1.sticky {
         position: sticky;
         top: var(--header-height);
         height: calc(100vh - var(--header-height));
         overflow: hidden;
     }
-} 
+}
+
+@media only screen and (min-height: 1025px) and (min-width: 941px) {
+    .col-2.sticky {
+        position: sticky;
+        top: var(--header-height);
+        height: calc(100vh - var(--header-height));
+        overflow: hidden;
+    }
+}
 
 .col-inner {
     max-width: 43rem;
