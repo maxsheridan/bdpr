@@ -125,7 +125,7 @@ main {
     overflow-y: auto;
 }
 
-@media only screen and (min-height: 1025px) and (min-width: 941px) {
+@media only screen and (min-height: 1061px) and (min-width: 941px) {
     .col-2.sticky {
         position: sticky;
         top: var(--header-height);
