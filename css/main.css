@@ -32,11 +32,11 @@
 
 html {
     font-size: 16px;
-    cursor: url('/assets/graphics/point.svg'), auto;
+    cursor: url('/assets/graphics/point.svg') 16 -16, auto;
 }
 
 html a:hover {
-    cursor: url('/assets/graphics/hover.svg'), auto;
+    cursor: url('/assets/graphics/hover.svg') 16 -16, auto;
 }
 
 body { 
@@ -277,8 +277,19 @@ p.intro {
         padding: 2rem 1rem;
     }
 
+    .site-title {
+        max-width: 39rem; /*Accounts for padding*/
+    }
+
     nav {
         justify-content: center;
+        width: 100%;
+    }
+
+    nav .links {
+        justify-content: space-between;
+        width: 100%;
+        max-width: 39rem; /*Accounts for padding*/
     }
 
     main {
@@ -296,12 +307,12 @@ p.intro {
 
     .col-2 {
         justify-content: flex-start;
-        max-width: 41rem; /*accounts for padding*/
+        max-width: 41rem; /*Accounts for padding*/
         margin: 0 auto;
     }
 
     .col-inner {
-        max-width: 41rem; /*accounts for padding*/
+        max-width: 41rem; /*Accounts for padding*/
         padding: 1rem 1rem 3rem;
     }
     
