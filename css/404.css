@@ -32,11 +32,11 @@
 
 html {
     font-size: 16px;
-    cursor: url('/assets/graphics/point.svg'), auto;
+    cursor: url('/assets/graphics/point.svg') 10 -5, auto;
 }
 
 html a:hover {
-    cursor: url('/assets/graphics/hover.svg'), auto;
+    cursor: url('/assets/graphics/hover.svg') 10 -5, auto;
 }
 
 body { 
