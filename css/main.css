@@ -55,7 +55,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     position: sticky;
     top: 0;
     z-index: 9999;
@@ -63,11 +63,14 @@ header {
     background: #ECDFDF;
 }
 
-.site-title h1 {
-    font-size: clamp(2rem,5.6vw,4.25rem);
+.site-title {
+    width: 100%;
+}
+
+svg.text {
+    padding: .5rem 0;
     border-top: 4px solid white;
     border-bottom: 4px solid white;
-    margin: 0;
 }
 
 nav {
