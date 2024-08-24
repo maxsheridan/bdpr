@@ -15,8 +15,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 .then(data => {
                     const col2 = document.querySelector(".col-2");
                     col2.innerHTML = data;
-                    col2.classList.add("sticky");  // Apply sticky class
+                    
+                    // Force a reflow and then apply the sticky class
+                    requestAnimationFrame(() => {
+                        // Allow the browser to reflow the content
+                        col2.classList.add("sticky");
+                    });
+
                     col2ContentLoaded = true; // Set flag to true after loading content
+                    
                     // Reattach event listeners to links in col-2 content
                     reattachAjaxLinkListeners();
                 })
@@ -45,8 +52,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 // Update the main content
                 document.querySelector('#content').innerHTML = newContent;
+                
                 // Scroll to the top of the page
                 window.scrollTo(0, 0);
+                
                 // Update the document title
                 document.title = newTitle;
 
