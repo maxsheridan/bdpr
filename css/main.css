@@ -119,6 +119,10 @@ main {
     overflow-y: auto;
 }
 
+.col-1 .col-inner {
+    margin-top: -.45rem; /*Equalizes text and photo on desktops*/
+}
+
 .col-2 {
     display: flex;
     flex: 1.25;
