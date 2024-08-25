@@ -98,6 +98,10 @@ nav .links a {
     padding-bottom: .15rem;
 }
 
+nav .links a {
+    border-bottom: 3px solid transparent; /*Equalizes different heights of default and active links*/
+}
+
 nav .links a.active {
     border-bottom: 3px solid var(--secondary-color);
 }
