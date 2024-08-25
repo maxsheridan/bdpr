@@ -58,7 +58,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 5;
-    height: 100%;
     padding: 2rem 2rem;
     background: #ECDFDF;
 }
@@ -105,6 +104,10 @@ main {
     display: flex;
     flex: 1;
 }
+
+main.post {
+    margin-top: 3px; /*Accomodates active link border height*/
+} 
 
 .page {
     display: flex;
