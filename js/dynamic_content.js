@@ -15,12 +15,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 .then(data => {
                     const col2 = document.querySelector(".col-2");
                     col2.innerHTML = data;
-                    
-                    // Force a reflow and then apply the sticky class
-                    requestAnimationFrame(() => {
-                        // Allow the browser to reflow the content
-                        col2.classList.add("sticky");
-                    });
 
                     col2ContentLoaded = true; // Set flag to true after loading content
                     
