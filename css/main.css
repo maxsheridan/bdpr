@@ -111,10 +111,6 @@ main {
     flex: 1;
 }
 
-main.post {
-    margin-top: 3px; /*Accomodates active link border height*/
-} 
-
 .page {
     display: flex;
     width: 100%;
