@@ -22,6 +22,12 @@
     font-display: swap;
 }
 
+:root {
+    --background-color: #ECDFDF;
+    --primary-color: #111;
+    --secondary-color: white;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -43,7 +49,7 @@ body {
     min-height: 100vh;
     min-height: 100dvh;
     margin: 0 auto;
-    background: #ECDFDF;
+    background: var(--background-color);
     -ms-text-size-adjust: none;
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
@@ -59,7 +65,7 @@ header {
     top: 0;
     z-index: 5;
     padding: 2rem 2rem;
-    background: #ECDFDF;
+    background: var(--background-color);
 }
 
 .site-title {
@@ -68,8 +74,8 @@ header {
 
 svg.text {
     padding: .5rem 0;
-    border-top: 4px solid white;
-    border-bottom: 4px solid white;
+    border-top: 4px solid var(--secondary-color);
+    border-bottom: 4px solid var(--secondary-color);
 }
 
 nav {
@@ -93,7 +99,7 @@ nav .links a {
 }
 
 nav .links a.active {
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid var(--secondary-color);
 }
 
 nav .links a:nth-child(2) {
@@ -163,7 +169,7 @@ p {
     font-weight: 400;
     font-style: normal;
     line-height: 1.5;
-    color: #111;
+    color: var(--primary-color);
     margin: 0 0 1rem;
 }
 
@@ -178,7 +184,7 @@ h2 {
     font-style: normal;
     line-height: 1.45;
     text-transform: uppercase;
-    color: #111;
+    color: var(--primary-color);
     margin-bottom: 1.5rem;
 }
 
@@ -199,7 +205,7 @@ h1 {
     font-weight: 500;
     font-style: normal;
     line-height: 1.2;
-    color: #111;
+    color: var(--primary-color);
     margin: 0 0 1.5rem 0;
 }
 
@@ -210,7 +216,7 @@ li {
         font-style: normal;
         line-height: 1.5;
         list-style-type: none;
-        color: #111;
+        color: var(--primary-color);
 }
 
 .col-1 li {
@@ -218,7 +224,7 @@ li {
 }
 
 a {
-    color: #111;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -231,7 +237,7 @@ hr {
     display: block;
     height: 2px;
     border: 0;
-    background: #FFF;
+    background: var(--secondary-color);
     margin: 0 0 1rem;
 }
 
@@ -249,7 +255,7 @@ img {
     font-family: "Triptych Roman", Helvetica, Arial, sans-serif;
     font-size: 7rem;
     line-height: 4.5rem;
-    color: #111;
+    color: var(--primary-color);
 }
 
 p.intro {
