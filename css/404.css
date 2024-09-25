@@ -77,6 +77,10 @@ p.sig {
     font-family: 'Triptych Italick', Helvetica, Arial, sans-serif;
 }
 
+p.sig span {
+    border-bottom: 3px solid white;
+}
+
 h2 {
     font-family: 'Triptych Grotesque', Helvetica, Arial, sans-serif;
     font-size: clamp(1.04rem,2.7vw,1.17rem);
