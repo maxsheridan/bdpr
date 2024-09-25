@@ -172,6 +172,15 @@ p.small {
     font-size: clamp(.8rem,3vw,.9rem);
 }
 
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 3px solid var(--secondary-color);
+}
+
 h2 {
     font-family: 'Triptych Grotesque', Helvetica, Arial, sans-serif;
     font-size: clamp(1.04rem,2.7vw,1.17rem);
@@ -216,11 +225,6 @@ li {
 
 .col-1 li {
     margin: 0 0 1rem;
-}
-
-a {
-    color: var(--primary-color);
-    text-decoration: none;
 }
 
 blockquote {
