@@ -177,7 +177,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:not(.site-title a):not(nav a):hover {
     border-bottom: 3px solid var(--secondary-color);
 }
 
